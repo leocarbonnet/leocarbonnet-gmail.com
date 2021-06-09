@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a {
+  outline: none;
+  color: #000;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+	color: #000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	color: #000;
+	font-style: italic;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+
+}
+a::selection {
+  color: #fff;
+  background-color: none;
+}
+
+.text {
+	width:px;
+	margin-left:px;
+	left:1%;
+	font-family:Helvetica, Arial, sans-serif;
+	letter-spacing:1px;
+	font-size:28px;
+
+}
+
+.bw::selection {
+      color: #fff;
+      background-color:none;
+}
+
+img {
+    width:50%;
+    margin-left:2%;
+    margin-top:2%;
+}
+
+@media (max-width: 480px) {
+ img {
+    width:370px;
+    }
+}
+    
+@media (min-width: 1400px) {
+ .text {
+    font-size:36px;
+    }
+}    
+
