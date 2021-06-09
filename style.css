@@ -54,6 +54,9 @@ img {
  img {
     width:370px;
     }
+ .text {
+      font-size:36px;
+      }
 }
     
 @media (min-width: 1400px) {
