@@ -10,6 +10,7 @@ a {
 
 a:link {
 	color: #000;
+  font-style: italic;
 }
 a:visited {
 	text-decoration: none;
@@ -17,7 +18,8 @@ a:visited {
 }
 a:hover {
 	color: #000;
-	font-style: italic;
+	font-style: normal;
+  cursor: crosshair;
 }
 a:active {
 	text-decoration: none;
@@ -52,16 +54,11 @@ img {
 
 @media (max-width: 480px) {
  img {
-    width:370px;
+    width:360px;
+    margin-left:1px;
     }
  .text {
       font-size:36px;
       }
 }
-    
-@media (min-width: 1400px) {
- .text {
-    font-size:36px;
-    }
-}    
 
