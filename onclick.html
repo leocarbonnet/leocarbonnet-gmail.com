@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html lang='fr'>     
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="onclick2.css" type="text/css" media="screen"/>
+<title>Léo Carbonnet</title>
+</head>
+<body>
+
+<span class="text bw">Art, editorial design, workshop and teaching, coordinator of <a href="https://www.f-a-q.org/"  target="_blank" class="intro">FAQ</a>, 
+	partner at <a href="https://www.large.la/"  target="_blank" class="intro">Large</a>. ☺ <a href="mailto:leo@large.la" class="intro">Get in touch</a></span>
+<span class="legende bw"> ♪ Works samples:
+	<a href="#" id="img/img1" onclick="afficherImage(this.id)">[1] ISELP Brussels, bi-annual program, spread, 2016. </a>
+	<a href="#" id="img/img2" onclick="afficherImage(this.id)">[2] Untitled, mixed media on canvas, 210×140 mm, 2020. </a>
+	<a href="#" id="img/img3" onclick="afficherImage(this.id)">[3] Ésac, <span class="ital">livret de l’étudiant 2020-2021</span>, cover. </a>
+	<a href="#" id="img/img4" onclick="afficherImage(this.id)">[4] <span class="ital">Sans-titres</span>, web series, Centre Pompidou, 2018</a> (<a href="https://vimeo.com/showcase/5435609" target="_blank" class="intro">watch full project here</a>).
+	<a href="#" id="img/img5" onclick="afficherImage(this.id)">[5] Editorial design workshop, Campus Fonderie de l’image, 2019.</a>
+	<a href="#" id="img/img6" onclick="afficherImage(this.id)">[6] <span class="ital">Chess study</span>, drawing on paper, 50×120mm, 2021. </a>
+	<a href="#" id="img/img7" onclick="afficherImage(this.id)">[7] Patch Magazine №1, spread, 2017. </a>
+	<a href="#" id="img/img8" onclick="afficherImage(this.id)">[8] Trax magazine, spread, 2019. </a>Léo Carbonnet, 2021.</span>
+<script language="javascript">
+  function afficherImage( id)
+				{
+					var divImage = document.getElementById('affichageImage');
+					
+					if (divImage.hasChildNodes()){
+						divImage.removeChild(node);
+					}
+          
+					var hrefImg = id +".jpg";
+					node = document.createElement('img');
+					node.id = id + "Image";
+					node.src = hrefImg;
+					node.alt = id;
+
+					divImage.appendChild(node);
+				}		
+</script>
+<div id='affichageImage'></div>
+
+
+
+
+</body></html>
